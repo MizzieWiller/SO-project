@@ -1,5 +1,19 @@
 # 🖥️ Dashboard de Sistemas Operacionais (SO)
 
+> 📌 **Nota sobre as versões**
+>
+> Este repositório começou como o dashboard entregue na disciplina, que roda no Render e mostra as métricas do servidor (CPU, RAM, disco, rede, Git e arquivos). Essa ideia e essas métricas continuam as mesmas.
+>
+> Depois da entrega, evoluí o projeto para também monitorar o **meu próprio computador**, que era a ideia que eu queria desde o começo. O que mudou:
+>
+> - o HTML, que ficava dentro do `index.js`, foi separado em `public/index.html`, e o servidor passou a entregar os dados em `/api/dados`;
+> - novo **modo agente**: o `agente.js` roda no meu PC e envia as métricas para uma hospedagem PHP (`site/`), que mostra o último dado recebido;
+> - player de música com botão de voltar, aba **Faixas** e atalhos de teclado;
+> - o disco passou a funcionar no Windows, e o agente mede o uso real da CPU;
+> - `.env`, `ecosystem.config.js` (PM2) e um README completo para quem quiser copiar e testar.
+>
+> 🔖 **A versão original, exatamente como foi entregue,** está na tag [`v1-entrega`](https://github.com/MizzieWiller/SO-project/tree/v1-entrega).
+
 **📍 Demos**
 
 - **Modo servidor** (Render, mostra as métricas da máquina da nuvem): [https://so-co8a.onrender.com/](https://so-co8a.onrender.com/)

@@ -1,4 +1,16 @@
 {
+  "name": "so-project",
+  "version": "2.0.0",
+  "description": "Dashboard de Sistemas Operacionais com player de música: painel local e agente para hospedagem PHP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "agente": "node --env-file=.env agente.js",
+    "pm2": "pm2 start ecosystem.config.js"
+  },
+  "engines": {
+    "node": ">=18.15.0"
+  },
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1"
